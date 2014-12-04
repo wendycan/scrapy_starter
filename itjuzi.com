@@ -562,12 +562,12 @@
     <li class="clearfix">  
       <i class="pull-left"> •　</i>
       <a class="pull-left" href="http://itjuzi.com/investfirm">投资机构</a>
-      <b class="pull-right dark">1409家</b>
+      <b class="pull-right dark">1410家</b>
     </li>
     <li class="clearfix">  
       <i class="pull-left"> •　</i>
       <a class="pull-left" href="http://itjuzi.com/investor">投资人</a>
-      <b class="pull-right dark">1062位</b>
+      <b class="pull-right dark">1064位</b>
     </li>
 
   </ul>
