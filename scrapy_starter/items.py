@@ -9,9 +9,11 @@ import scrapy
 
 
 class ScrapyStarterItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    title = scrapy.Field()
-    link = scrapy.Field()
-    desc = scrapy.Field()
-    pass
+  # define the fields for your item here like:
+  # name = scrapy.Field()
+  date = scrapy.Field()
+  company = scrapy.Field()
+  money = scrapy.Field()
+  area = scrapy.Field()
+  turn = scrapy.Field()
+  investor = scrapy.Field()

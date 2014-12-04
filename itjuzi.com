@@ -122,28 +122,28 @@
 					<a href="http://itjuzi.com/person">
 						<i class="icon icon-top-person"></i>
 						创业者
-						<em>10276</em>
+						<em>10278</em>
 					</a>
 				</li>
 				<li  >
 					<a href="http://itjuzi.com/investfirm">
 						<i class="icon icon-top-investfirm"></i>
 						机构
-						<em>1409</em>
+						<em>1410</em>
 					</a>
 				</li>
 				<li  >
 					<a href="http://itjuzi.com/investor">
 						<i class="icon icon-top-investor"></i>
 						投资人
-						<em>1062</em>
+						<em>1064</em>
 					</a>
 				</li>
 				<li class="current" >
 					<a href="http://itjuzi.com/invstdeal">
 						<i class="icon icon-top-investevents"></i>
 						投资数据
-						<em>6592</em>
+						<em>6594</em>
 					</a>
 				</li>
 				<li  >
@@ -305,7 +305,7 @@
     <div class="normal-box clearfix">
       <div class="public-info pull-left">
         <p><a href="http://itjuzi.com/investevents">融资事件</a></p>
-        <p class="dark">共5987条，每页显示10条</p>
+        <p class="dark">共5989条，每页显示10条</p>
       </div>
 
       <ul class="public-follow pull-right">
@@ -557,7 +557,7 @@
     <li class="clearfix">  
       <i class="pull-left"> •　</i>
       <a class="pull-left" href="http://itjuzi.com/investevents">融资事件</a>
-      <b class="pull-right dark">6359条</b>
+      <b class="pull-right dark">6361条</b>
     </li>
     <li class="clearfix">  
       <i class="pull-left"> •　</i>
@@ -583,17 +583,17 @@
             <li class="clearfix">  
       <i class="pull-left"> •　</i>
       <a class="pull-left" href="http://itjuzi.com/investevents?similar_money=2">数百万</a>
-      <b class="pull-right dark">占比45.38%</b>
+      <b class="pull-right dark">占比45.40%</b>
     </li>
               <li class="clearfix">  
       <i class="pull-left"> •　</i>
       <a class="pull-left" href="http://itjuzi.com/investevents?similar_money=3">数千万</a>
-      <b class="pull-right dark">占比31.48%</b>
+      <b class="pull-right dark">占比31.47%</b>
     </li>
               <li class="clearfix">  
       <i class="pull-left"> •　</i>
       <a class="pull-left" href="http://itjuzi.com/investevents?similar_money=5">未透露</a>
-      <b class="pull-right dark">占比10.31%</b>
+      <b class="pull-right dark">占比10.30%</b>
     </li>
               <li class="clearfix">  
       <i class="pull-left"> •　</i>
@@ -619,12 +619,12 @@
               <li class="clearfix">  
         <i class="pull-left"> •　</i>
         <a class="pull-left" href="http://itjuzi.com/investevents?currency=1">人民币</a>
-        <b class="pull-right dark">占比62.07%</b>
+        <b class="pull-right dark">占比62.09%</b>
       </li>
                     <li class="clearfix">  
         <i class="pull-left"> •　</i>
         <a class="pull-left" href="http://itjuzi.com/investevents?currency=2">美元</a>
-        <b class="pull-right dark">占比37.46%</b>
+        <b class="pull-right dark">占比37.44%</b>
       </li>
                     <li class="clearfix">  
         <i class="pull-left"> •　</i>
@@ -659,13 +659,13 @@
                 <li class="clearfix">  
           <i class="pull-left"> •　</i>
           <a class="pull-left" href="http://itjuzi.com/investevents?round=2">A轮</a>
-          <b class="pull-right dark">占比37.82%</b>
+          <b class="pull-right dark">占比37.80%</b>
         </li>
        
                 <li class="clearfix">  
           <i class="pull-left"> •　</i>
           <a class="pull-left" href="http://itjuzi.com/investevents?round=1">种子天使</a>
-          <b class="pull-right dark">占比35.92%</b>
+          <b class="pull-right dark">占比35.95%</b>
         </li>
        
                 <li class="clearfix">  
@@ -677,7 +677,7 @@
                 <li class="clearfix">  
           <i class="pull-left"> •　</i>
           <a class="pull-left" href="http://itjuzi.com/investevents?round=9">收购</a>
-          <b class="pull-right dark">占比7.26%</b>
+          <b class="pull-right dark">占比7.25%</b>
         </li>
        
                 <li class="clearfix">  
