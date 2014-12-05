@@ -22,3 +22,11 @@ Crawling
 ~~~  sh
 $ scrapy crawl juzi
 ~~~
+
+Ref
+---------
+
+* [xPath](http://www.w3schools.com/xpath/xpath_syntax.asp)
+* [WEB SCRAPER](http://newcoder.io/scrape/)
+* [Doc-zh](http://scrapy-chs.readthedocs.org/zh_CN/latest/topics/stats.html)
+* [Doc-en](http://doc.scrapy.org/en/latest/intro/tutorial.html)
