@@ -6,16 +6,12 @@ class JuziSpider(scrapy.Spider):
   name = "juzi"
   allowed_domains = ["itjuzi.com"]
   start_urls = [
-      "http://itjuzi.com/investevents"
+      "http://itjuzi.com/investev ents"
   ]
-
-  # def parse(self, response):
-  #     filename = response.url.split("/")[-2]
-  #     with open(filename, 'wb') as f:
-  #         f.write(response.body)
+  start_urls = ['http://itjuzi.com/investevents?page=%s' % page for page in xrange(1,51)]
 
   def parse(self, response):
-    for sel in response.xpath("//table[@class='children-norml-link']//tr"):
+    for sel in response.xpath("//table[@class='children-norml-link']//tbody//tr"):
       item = ScrapyStarterItem()
       item['date'] = sel.xpath('td[1]/text()').extract()
       item['company'] = sel.xpath('td[2]/a/text()').extract()
