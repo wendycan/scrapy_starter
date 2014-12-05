@@ -13,5 +13,11 @@ BOT_NAME = 'scrapy_starter'
 SPIDER_MODULES = ['scrapy_starter.spiders']
 NEWSPIDER_MODULE = 'scrapy_starter.spiders'
 
+ITEM_PIPELINES = { 'scrapy_starter.pipelines.ScrapyStarterPipeline': 1 }
+
+DATABASE = {'drivername': '',
+            'username': '',
+            'password': '',
+            'database': ''}
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'scrapy_starter (+http://www.yourdomain.com)'

@@ -1,3 +1,4 @@
 /scrapy_starter/*.pyc
 /scrapy_starter/spiders/*.pyc
+/env
 /items.json
