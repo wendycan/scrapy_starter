@@ -5,12 +5,15 @@ Requirements
 ---------
 * pip
 * scrapy
+* sqlalchemy
+* sqlite
 
 Install
 ---------
 
 ~~~ sh
-$ pip install Scrapy
+$ pip install scrapy
+$ pip install sqlalchemy
 ~~~
 
 Crawling
