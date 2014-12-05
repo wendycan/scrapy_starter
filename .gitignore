@@ -1,4 +1,5 @@
 /scrapy_starter/*.pyc
 /scrapy_starter/spiders/*.pyc
 /env
+/juzi
 /items.json

@@ -11,13 +11,19 @@ def db_connect():
     return create_engine(URL(**settings.DATABASE))
 
 
-def create_hn_table(engine):
+def create_investevents_table(engine):
     DeclarativeBase.metadata.create_all(engine)
 
 
-class Hn(DeclarativeBase):
-    __tablename__ = "hn"
+class Investevents(DeclarativeBase):
+    __tablename__ = "investevents"
 
     id = Column(Integer, primary_key=True)
-    title = Column('title', String(200))
-    link = Column('link', String(200))
+    date = Column('date', String)
+    company_url = Column('company_url', String)
+    turn = Column('turn', String)
+    money = Column('money', String)
+    area = Column('area', String)
+    investor = Column('investor', String)
+    investor_url = Column('investor_url', String)
+    company = Column('company', String)
