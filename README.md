@@ -1,5 +1,6 @@
 scrapy_starter
 ===========================
+A spider to scrawl [http://itjuzi.com](http://itjuzi.com)
 
 Requirements
 ---------
