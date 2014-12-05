@@ -19,8 +19,10 @@ class JuziSpider(scrapy.Spider):
       item = ScrapyStarterItem()
       item['date'] = sel.xpath('td[1]/text()').extract()
       item['company'] = sel.xpath('td[2]/a/text()').extract()
+      item['company_url'] = sel.xpath('td[2]/a/@href').extract()
       item['turn'] = sel.xpath('td[3]/a/text()').extract()
       item['money'] = sel.xpath('td[4]/text()').extract()
       item['area'] = sel.xpath('td[5]/a/text()').extract()
       item['investor'] = sel.xpath('td[6]/a/text()').extract()
+      item['investor_url'] = sel.xpath('td[6]/a/@href').extract()
       yield item
