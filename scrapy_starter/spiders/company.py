@@ -3,8 +3,8 @@ import cPickle
 
 from scrapy_starter.items import ScrapyStarterItem
 
-class JuziSpider(scrapy.Spider):
-  name = "juzi"
+class CompanySpider(scrapy.Spider):
+  name = "company"
   allowed_domains = ["itjuzi.com"]
   start_urls = ['http://itjuzi.com/investevents?page=%s' % page for page in xrange(1,3)]
 

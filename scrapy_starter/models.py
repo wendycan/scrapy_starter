@@ -27,3 +27,16 @@ class Investevents(DeclarativeBase):
     investor = Column('investor', String)
     investor_url = Column('investor_url', String)
     company = Column('company', String)
+
+class Companies(DeclarativeBase):
+    __tablename__ = "companies"
+
+    id = Column(Integer, primary_key=True)
+    date = Column('date', String)
+    company_url = Column('company_url', String)
+    turn = Column('turn', String)
+    money = Column('money', String)
+    area = Column('area', String)
+    investor = Column('investor', String)
+    investor_url = Column('investor_url', String)
+    company = Column('company', String)
