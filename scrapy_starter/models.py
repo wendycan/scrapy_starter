@@ -32,6 +32,7 @@ class Companies(DeclarativeBase):
     __tablename__ = "companies"
 
     id = Column(Integer, primary_key=True)
+    url = Column('url', String)
     company_url = Column('company_url', String)
     company = Column('company', String)
     date = Column('date', String)

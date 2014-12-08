@@ -10,15 +10,17 @@ class CompanySpider(scrapy.Spider):
   engine = db_connect()
   connection = engine.connect()
   result = connection.execute("select company_url from investevents")
-  start_urls = []
+  urls = []
   for row in result:
-    start_urls.append(row['company_url'])
+    urls.append(row['company_url'])
+  start_urls = list(set(urls))
   connection.close()
 
   def parse(self, response):
     for sel in response.xpath("//ul[@class='detail-info']"):
       item = CompanyItem()
-      item['company_url'] = ''.join(sel.xpath('li[1]/a/text()').extract())
+      item['company_url'] = response.url
+      item['url'] = ''.join(sel.xpath('li[1]/a/text()').extract())
       item['company'] = ''.join(sel.xpath('li[2]/em/text()').extract())
       item['date'] = ''.join(sel.xpath('li[3]/em/text()').extract())
       item['location'] = ''.join(sel.xpath('li[4]/a/text()').extract())

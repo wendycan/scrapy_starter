@@ -22,6 +22,7 @@ class InvesteventItem(scrapy.Item):
 class CompanyItem(scrapy.Item):
   # define the fields for your item here like:
   # name = scrapy.Field()
+  url = scrapy.Field()
   company_url = scrapy.Field()
   company = scrapy.Field()
   date = scrapy.Field()
