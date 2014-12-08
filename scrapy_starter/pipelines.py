@@ -5,7 +5,7 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 from sqlalchemy.orm import sessionmaker
-from models import Investevents, db_connect, create_investevents_table
+from models import Investevents, Companies, db_connect, create_investevents_table
 
 class ScrapyStarterPipeline(object):
     def __init__(self):
@@ -14,8 +14,14 @@ class ScrapyStarterPipeline(object):
         self.Session = sessionmaker(bind=engine)
 
     def process_item(self, item, spider):
+        print 'spider:', spider.name
         session = self.Session()
-        investevents = Investevents(**item)
-        session.add(investevents)
-        session.commit()
+        if spider.name == 'investevents':
+            investevents = Investevents(**item)
+            session.add(investevents)
+            session.commit()
+        if spider.name == 'company':
+            companies = Companies(**item)
+            session.add(companies)
+            session.commit()
         return item

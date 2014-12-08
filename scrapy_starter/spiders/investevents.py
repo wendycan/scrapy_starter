@@ -1,7 +1,7 @@
 import scrapy
 import cPickle
 
-from scrapy_starter.items import ScrapyStarterItem
+from scrapy_starter.items import InvesteventItem
 
 class InvesteventsSpider(scrapy.Spider):
   name = "investevents"
@@ -10,7 +10,7 @@ class InvesteventsSpider(scrapy.Spider):
 
   def parse(self, response):
     for sel in response.xpath("//table[@class='children-norml-link']//tbody//tr"):
-      item = ScrapyStarterItem()
+      item = InvesteventItem()
       item['date'] = ''.join(sel.xpath('td[1]/text()').extract())
       item['company'] = ''.join(sel.xpath('td[2]/a/text()').extract())
       item['company_url'] = ''.join(sel.xpath('td[2]/a/@href').extract())

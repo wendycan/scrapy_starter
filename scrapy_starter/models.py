@@ -32,11 +32,12 @@ class Companies(DeclarativeBase):
     __tablename__ = "companies"
 
     id = Column(Integer, primary_key=True)
-    date = Column('date', String)
     company_url = Column('company_url', String)
-    turn = Column('turn', String)
-    money = Column('money', String)
-    area = Column('area', String)
-    investor = Column('investor', String)
-    investor_url = Column('investor_url', String)
     company = Column('company', String)
+    date = Column('date', String)
+    location = Column('location', String)
+    state = Column('state', String)
+    area = Column('area', String)
+    stage = Column('stage', String)
+    tags = Column('tags', String)
+    desc = Column('desc', String)
