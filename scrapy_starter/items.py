@@ -32,3 +32,7 @@ class CompanyItem(scrapy.Item):
   stage = scrapy.Field()
   tags = scrapy.Field()
   desc = scrapy.Field()
+
+class CompanyUrlItem(scrapy.Item):
+  url = scrapy.Field()
+  name = scrapy.Field()

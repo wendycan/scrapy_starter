@@ -42,3 +42,10 @@ class Companies(DeclarativeBase):
     stage = Column('stage', String)
     tags = Column('tags', String)
     desc = Column('desc', String)
+
+class CompanyUrl(DeclarativeBase):
+    __tablename__ = "company_urls"
+
+    id = Column(Integer, primary_key=True)
+    url = Column('url', String)
+    name = Column('name', String)

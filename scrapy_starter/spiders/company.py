@@ -9,10 +9,10 @@ class CompanySpider(scrapy.Spider):
   allowed_domains = ["itjuzi.com"]
   engine = db_connect()
   connection = engine.connect()
-  result = connection.execute("select company_url from investevents")
+  result = connection.execute("select url from company_urls")
   urls = []
   for row in result:
-    urls.append(row['company_url'])
+    urls.append(row['url'])
   start_urls = list(set(urls))
   connection.close()
 
