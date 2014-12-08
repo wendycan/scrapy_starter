@@ -16,6 +16,6 @@ NEWSPIDER_MODULE = 'scrapy_starter.spiders'
 ITEM_PIPELINES = { 'scrapy_starter.pipelines.ScrapyStarterPipeline': 1 }
 
 DATABASE = {'drivername': 'sqlite',
-            'database': 'juzi'}
+            'database': 'it-juzi'}
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'scrapy_starter (+http://www.yourdomain.com)'

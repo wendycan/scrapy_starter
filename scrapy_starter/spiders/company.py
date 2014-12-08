@@ -6,6 +6,7 @@ from scrapy_starter.models import db_connect
 
 class CompanySpider(scrapy.Spider):
   name = "company"
+  allowed_domains = ["itjuzi.com"]
   engine = db_connect()
   connection = engine.connect()
   result = connection.execute("select company_url from investevents")
@@ -13,8 +14,6 @@ class CompanySpider(scrapy.Spider):
   for row in result:
     start_urls.append(row['company_url'])
   connection.close()
-  allowed_domains = ["itjuzi.com"]
-  start_urls = ['http://itjuzi.com/company/15847']
 
   def parse(self, response):
     for sel in response.xpath("//ul[@class='detail-info']"):

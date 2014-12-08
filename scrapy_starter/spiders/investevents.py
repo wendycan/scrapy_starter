@@ -6,7 +6,7 @@ from scrapy_starter.items import InvesteventItem
 class InvesteventsSpider(scrapy.Spider):
   name = "investevents"
   allowed_domains = ["itjuzi.com"]
-  start_urls = ['http://itjuzi.com/investevents?page=%s' % page for page in xrange(1,3)]
+  start_urls = ['http://itjuzi.com/investevents?page=%s' % page for page in xrange(1,603)]
 
   def parse(self, response):
     for sel in response.xpath("//table[@class='children-norml-link']//tbody//tr"):
